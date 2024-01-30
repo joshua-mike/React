@@ -1,4 +1,4 @@
-export const Greet = (props) =>
+export const Greet = (greeting) =>
 {
-    return <h1>React.js Component {props.name}</h1>
+    return <h1>React.js Component {greeting.name}</h1>
 }
