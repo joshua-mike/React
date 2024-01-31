@@ -1,8 +1,12 @@
-export const Message = (greeting) =>
-{
+import { useState } from 'react'
+
+export const Message = () =>
+{ 
+    const [message, setMessage] = useState('Welcome')
     return (
         <div>
-            <h1>React.js Component {greeting.name}</h1>
+            <h1>{message}</h1>
+            <button onClick={ () => setMessage('Thank you for subscribing') }>Subscribe</button>
         </div>
         
     ) 
