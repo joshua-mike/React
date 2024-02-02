@@ -1,6 +1,6 @@
-import './App.css';
-import './appStyles.css'
-import styles from './appStyles.module.css'
+import './css/App.css';
+import './css/appStyles.css'
+import styles from './css/appStyles.module.css'
 import { Inline } from './components/Inline';
 import { Stylesheet } from './components/Stylesheet';
 //import { NameList } from './components/NameList';

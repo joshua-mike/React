@@ -1,4 +1,4 @@
-import './myStyles.css'
+import '../css/myStyles.css'
 
 export const Stylesheet = () => 
 {
