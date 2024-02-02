@@ -1,9 +1,14 @@
 import './App.css';
+import './appStyles.css'
+import styles from './appStyles.module.css'
+import { Inline } from './components/Inline';
+import { Stylesheet } from './components/Stylesheet';
+//import { NameList } from './components/NameList';
 // import { ClickHandler } from './components/ClickHandler';
 // import { Greet } from './components/Greeting'
 // import { Message } from './components/Message'
 // import { ParentComponent } from './components/ParentComponent';
-import { UserGreeting } from './components/UserGreeting';
+//import { UserGreeting } from './components/UserGreeting';
 
 function App() 
 {
@@ -14,8 +19,12 @@ function App()
      </Greet>
      <ClickHandler />
      <Message /> */}
-     {/* <ParentComponent /> */}
-     <UserGreeting />
+     {/* <UserGreeting /> */}
+     {/* <NameList /> */}
+     <Stylesheet />
+     <Inline />
+     <h1 className='error'>Error</h1>
+     <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
