@@ -3,7 +3,7 @@
 // import styles from './css/appStyles.module.css'
 // import { Inline } from './components/Inline';
 // import { Stylesheet } from './components/Stylesheet';
-import { Form } from './components/Form';
+import { Form } from './components/Form.js';
 //import { NameList } from './components/NameList';
 // import { ClickHandler } from './components/ClickHandler';
 // import { Greet } from './components/Greeting'

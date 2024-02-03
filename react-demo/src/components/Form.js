@@ -2,33 +2,37 @@ import { useState } from "react"
 
 export const Form = () => 
 {
-    const [username, setUsername] = useState('')
+    const [country, setCountry] = useState('');
+    const [username, setUsername] = useState('');
 
-    const handleSubmit = (event) => 
+    const handleSelection = (event) => 
     {
-        event.preventDefault()
-        alert(`Form data is ${username}`)
-    
-    }
+        event.preventDefault();
+        if (event.currentTarget.id === 'countries')
+            alert(`Country selection is: ${country}`);
+        else
+            alert(`Username: ${username}, set.`)
+    };
 
     return (
-        <form onSelect={handleSubmit}>
-            <textarea>This is a list of countries.</textarea>
-            <select name="country" id="country">
-            <option value="isreal">Israel</option>
-            </select>
-        </form>
-    )
+<div>
+    <form id="countries" onSubmit={handleSelection}>     
+        <select name="countries" id="country" value={country} onChange={(event) => {setCountry(event.target.value)}}>
+            <option value="Isreal">Israel</option>
+            <option value="Syria">Syria</option>
+            <option value="Labanon">Labanon</option>
+            <option value="Iran">Iran</option>
+            <option value="Iraq">Iraq</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>    
     
-    // return ( 
-    // <form onSubmit={handleSubmit}>
-    //     <div>
-    //         <label>Username</label>
-    //         <input type="text" value={username} onChange={(event) => setUsername(event.target.value)}/>
-    //     </div>
-    //     <button type="submit">Submit</button>
-    // </form>
-    // )
-
+    <form id="user" onSubmit={handleSelection}>
+        <label>Username</label>
+         <input type="text" value={username} onChange={(event) => {setUsername(event.target.value)}}/>     
+        <button type="submit">Submit</button>
+    </form>
+</div>
+)
 }
 
