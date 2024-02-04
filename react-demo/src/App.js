@@ -3,13 +3,15 @@
 // import styles from './css/appStyles.module.css'
 // import { Inline } from './components/Inline';
 // import { Stylesheet } from './components/Stylesheet';
-import { Form } from './components/Form.js';
+//import { Form } from './components/Form.js';
 //import { NameList } from './components/NameList';
 // import { ClickHandler } from './components/ClickHandler';
 // import { Greet } from './components/Greeting'
 // import { Message } from './components/Message'
 // import { ParentComponent } from './components/ParentComponent';
 //import { UserGreeting } from './components/UserGreeting';
+
+import { PostList } from "./components/PostList.js";
 
 function App() 
 {
@@ -26,7 +28,7 @@ function App()
      <Inline />
      <h1 className='error'>Error</h1>
      <h1 className={styles.success}>Success</h1> */}
-     <Form />
+     <PostList />
     </div>
   );
 }
