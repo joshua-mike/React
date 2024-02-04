@@ -22,9 +22,6 @@ function App()
   const [query, setQuery] = useState('')
   const [inputValue, setInputValue] = useState('')
   const [isPending, startTransition] = useTransition()
-
-
-
   const changeHandler = (event) =>
   {
     setInputValue(event.target.value)
