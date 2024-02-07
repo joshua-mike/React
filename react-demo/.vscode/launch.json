@@ -18,22 +18,5 @@
             "type": "msedge",
             "webRoot": "${workspaceFolder}"
         },
-
-        // {
-        //     "name": "Attach to Chrome",
-        //     "port": 9222,
-        //     "request": "attach",
-        //     "type": "chrome",
-        //     "webRoot": "${workspaceFolder}"
-        // },
-        // {
-        //     "type": "node",
-        //     "request": "launch",
-        //     "name": "Launch Program",
-        //     "skipFiles": [
-        //         "<node_internals>/**"
-        //     ],
-        //     "program": "${workspaceFolder}\\src\\components\\Form.js"
-        // }
     ]
 }
